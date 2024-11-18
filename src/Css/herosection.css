@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Galada&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+
+}
+
+.mainHead{
+    background-image: url(../Images/coffeeSplash.png);
+}
+
+.heromain {
+    z-index: 1; 
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    padding-bottom: 3%;
+    position: relative;
+    z-index: 2; /* Ensure the container is above other elements */
+}
+
+.hero-content {
+    max-width: 50%;
+    position: relative;
+    z-index: 3; /* Bring buttons and content to the top */
+}
+
+.hero-content h1 {
+    
+    color: var(--secondarycolor);
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.hero-content p {
+    font-size: var(--heading-h5-font-size);
+    margin-top: 15px;
+}
+
+.highlight {
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}
+
+.hero-buttons {
+    margin-top: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
+
+.menu-btn,
+.location-btn {
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--secondarycolor);
+    color: var(--secondarycolor);
+    border-radius: 15px;
+}
+
+.menu-btn:hover,
+.location-btn:hover {
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+}
+
+.hero-image {
+    position: relative;
+    z-index: 2; /* Keep this below hero-content */
+}
+
+.hero-image img {
+    max-width: 350px;
+    border-radius: 50%;
+    background: none;
+    z-index: 1;
+}
+
+.coffee-beans {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    background-image: url('../Images/backgroundbeans.png');
+    background-size: 100% 45vh;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 45vh;
+    z-index: -1; 
+}
+.text-hover-effect {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .text-hover-effect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 3;
+  }
+  
+  .text-hover-effect:hover::before {
+    transform: translateX(100%);
+  }
+  
+  .text-hover-effect span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+@media (max-width: 1024px) {
+    .hero-container {
+        height: 90%;
+        padding: 5% 0;
+    }
+    .coffee-beans{
+        top: -20px;
+        right: -50px;
+        width: 45vw;
+        height: 25vh;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 915px) {
+    .hero-container {
+        height: 95%;
+        padding: 5% 0;
+    }
+    .coffee-beans{
+        top: -10px;
+        right: -50px;
+        width: 50vw;
+        height: 25vh;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 868px) {
+
+    .hero-image img {
+        width: 250px;
+        margin-left: 5%;
+    }
+    .coffee-beans {
+        top: -200px;
+        right: -100px;
+        width: 50vw;
+        height: 45vh;
+        background-size: cover;
+    }
+    .hero-container {
+        height: 95%;
+        padding: 5% 0;
+    }
+}
+@media(max-width:645px){
+    .heromain {
+        height:90%;
+        padding: auto;
+        
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 5%;
+        height: 95%;
+        padding: 5% 0;
+        
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-btn,
+    .location-btn {
+        margin-right: 0.5rem;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .coffee-beans {
+        top: -250px;
+        right: -250px;
+        width: 50vw;
+        height: 20vh;
+        background-size: cover;
+        opacity: 0.5;
+    }
+}
+@media (max-width:550px){
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 5%;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-container {
+        height: 35vh;
+    }
+
+    .coffee-beans {
+        top: -600px;
+        right: -150px;
+        width: 80vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }
+}
+@media (max-width:376px){
+    .hero-container {
+        height: 45vh;
+    }
+
+    .coffee-beans {
+        top: -350px;
+        right: -150px;
+        width: 80vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }
+}
+@media(max-width:345px){
+    .hero-container {
+        height: 45vh;
+    }
+
+    .coffee-beans {
+        top: -550px;
+        right: -100px;
+        width: 50vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }
+}
+
+@media (max-width:441px){
+    .hero-container {
+        height: 50vh;
+    }
+
+    .coffee-beans {
+        top: -450px;
+        right: -100px;
+        width: 50vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }   
+}
+
+@media(max-width:325px){
+    .hero-container {
+        height: 60vh;
+
+    }
+    .hero-content h1 {
+        font-size:1.5rem;
+        color: var(--secondarycolor);
+    }
+    
+    .hero-content p {
+        font-size:1rem;
+    }
+
+    .coffee-beans {
+        top: -450px;
+        right: -100px;
+        width: 50vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }   
+}

@@ -1,0 +1,178 @@
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+
+.CateringPageImage {
+    /* background-color: red; */
+    margin-right: 20%;
+    width: 30vw;
+    height: 60vh;
+    z-index: 2;
+    padding: 5px; 
+    box-sizing: border-box;
+    position: relative;
+    top: -130px; 
+}
+
+.CateringPageImage img {
+    width: 40vw; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid var(--Background-3);
+    background-color: var(--Background-3);
+}
+
+.CateringPageMain {
+    background-color: var(--Background-1);
+    width: 100%;
+    height: 90%;
+    margin-top: 10%;
+    padding: 2rem;
+    position: relative;
+    overflow: visible; /* Allow overflow for the image to escape */
+    z-index: 1; /* Background behind the image */
+}
+
+.CateringPageMain::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/coffecupbg.png');
+    background-size: auto; 
+    background-repeat: repeat; 
+    background-position: top left;
+    opacity: 0.4; 
+    z-index: 1;
+}
+
+.CateringPageContent {
+    margin: 5% 0;
+    /* background-color: red; */
+}
+
+.CateringPageContent h2 {
+    font-size: var(--heading-h2-font-size);
+    color: var(--secondarycolor);
+    font-weight: normal;
+    z-index: 5;
+}
+
+.CateringPageContent h3 {
+    font-size: var(--heading-h3-font-size);
+    color: var(--secondarycolor);
+    font-weight: normal;
+    z-index: 5;
+}
+
+.CateringPageContent p {
+    width:90vw;
+    font-size: var(--heading-h5-font-size);
+    color: var(--secondary-text);
+    font-weight: normal;
+    z-index: 5;
+}
+
+.span1 {
+    color: var(--secondarycolor);
+    border-bottom: 4px solid var(--primarycolor);
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .CateringPageImage {
+        margin-right: 0;
+        width: 50vw;
+    }
+
+    .CateringImageRadius {
+        width: 40vw; /* Make image responsive for larger screens */
+    }
+
+    .CateringPageContent p {
+        width: 100%; /* Adjust for medium screens */
+    }
+
+    .CateringPageContent {
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .CateringPageContent p {
+        width: 90vw; 
+    }
+
+    .CateringPageContent {
+        margin-right: 10%;
+    }
+
+    .CateringPageImage img {
+        width: 30vw;
+        height: 100%;
+    }
+}
+
+@media(max-width:600px) {
+    .CateringPageImage {
+        top: 10px;
+        margin-right: 0;
+        width: 100%; 
+        height: 60vh;
+        margin-bottom: 0;
+    }
+
+    .CateringPageImage img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width:645px) {
+    .CateringPageImage img {
+        width: 100%;
+        height: 100%;
+        top: -100px;
+    }
+}
+@media(max-width:1018px){
+
+        .CateringPageImage {
+            top: 10px;
+            margin-right: 0;
+            width: 100%;
+            height: 50vh;
+        }
+    
+        .CateringPageImage img {
+            width: 100%;
+            height: 100%;
+        }
+    
+}
+
+@media (min-width: 1024px) {
+    .CateringPageContent p {
+        width: 30vw; 
+    }
+}
+
+.CateringPageMain img {
+    margin: 0 auto;
+    max-width: 80%; /* Limit image size */
+}

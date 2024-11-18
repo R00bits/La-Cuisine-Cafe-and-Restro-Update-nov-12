@@ -1,0 +1,117 @@
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+
+}
+body {
+    overflow-x: hidden;
+}
+.maindiv {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-top: 0;
+}
+
+.heading h2 {
+    color: var(--secondarycolor);
+    font-size: var(--heading-h2-font-size);
+}
+
+.heading span {
+    color: var(--primarycolor);
+    font-size: var(--heading-h2-font-size);
+}
+
+.text h3 {
+    color: var(--secondarycolor);
+    font-size: var(--heading-h3-font-size);
+}
+
+.text p {
+    color: var(--secondary);
+    font-size: var(--heading-h5-font-size);
+}
+.space {
+    margin: 0 0 2% 2%;
+}
+
+.cardcardbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardbtn {
+    color: var(--primarycolor);
+    border: 1px solid var(--primarycolor);
+    border-radius: 5px;
+    width: 10vw;
+    height: 4vh;
+}
+
+.img-radius {
+    border-radius: 50px;
+}
+
+.cardbtn:hover {
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+}
+
+@media screen and (max-width: 1290px) {
+    .cardbtn {
+        width: 40vw;
+        height: 5vh;
+    }
+}
+@media screen and (max-width: 915px) {
+    .cardbtn {
+        width: 30vw;
+        height: 3vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cardbtn {
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cardbtn {
+        width: 40vw;
+    }
+    .space {
+        margin: 0 0 2% 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .maindiv {
+        padding: 0 15px;
+    }
+
+    .space {
+        margin: 0 0 2% 5%;
+    }
+
+    .cardcardbtn {
+        margin-top: 10px;
+    }
+
+    .ant-card {
+        margin: 10px;
+    }
+}

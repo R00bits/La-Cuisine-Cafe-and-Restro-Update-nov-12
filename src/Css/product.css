@@ -1,0 +1,91 @@
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+
+/* Card Image */
+.aboutimgradius {
+    border-radius: 15px;  /* Rounded corners for the image */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Aboutcartext styles */
+.Aboutcartext h3 {
+    font-size: var(--heading-h3-font-size);
+    color: var(--secondarycolor);
+    font-weight: normal;
+}
+
+.Aboutcartext p {
+    font-size: var(--heading-h5-font-size);
+    color: var(--secondary-text);
+    font-weight: normal;
+}
+.productbg{
+    background-color: var(--Background-1);
+    width: 100%;
+    height: 95%;
+    border-radius: 0% 100% 1% 99% / 100% 37% 63% 0% ;
+    background-image: url('../Images/coffecupbg.png');
+}
+
+/* Responsive layout adjustments */
+@media(max-width:1024px) {
+    .Product {
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .aboutimgradius {
+        height: 25vh; /* Adjust image height for smaller screens */
+    }
+}
+
+@media(max-width:768px) {
+    .Product {
+        height: auto;
+    }
+
+    .aboutimgradius {
+        height: 20vh; /* Adjust image height for smaller screens */
+    }
+
+    .Aboutcartext h3 {
+        font-size: 1.25rem; /* Adjust title size for smaller screens */
+    }
+
+    .Aboutcartext p {
+        font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
+    }
+}
+
+@media(max-width:475px) {
+    .Product {
+        height: auto;
+    }
+
+    .aboutimgradius {
+        height: 18vh; /* Smaller image height for very small screens */
+    }
+
+    .Aboutcartext h3 {
+        font-size: 1rem; /* Further adjust title size */
+    }
+
+    .Aboutcartext p {
+        font-size: 0.85rem; /* Further adjust paragraph size */
+    }
+}

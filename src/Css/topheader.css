@@ -1,0 +1,90 @@
+:root {
+    --primarycolor: #fbe1c8;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+
+.bg-primary{
+    background-color: var(--primarycolor);
+}
+.topheader_text{
+    color: var(--secondarycolor);
+    font-weight: 400;
+    font-size: small;
+}
+
+.system-uicons--location {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 21'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' transform='translate(4 2)'%3E%3Cpath d='m6.5 16.54l.631-.711Q8.205 14.6 9.064 13.49l.473-.624Q12.5 8.875 12.5 6.533C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033q0 2.342 2.963 6.334l.473.624a55 55 0 0 0 2.564 3.05'/%3E%3Ccircle cx='6.5' cy='6.5' r='2.5'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--secondarycolor);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+  .raphael--facebook {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' color='%23000'%3E%3Cpath d='M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12'/%3E%3Cpath d='M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--secondarycolor);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    transition: 0.2s all ease-in;
+  }
+  .raphael--facebook:hover{
+    background-color: var(--secondarycolor);
+  }
+  .simple-line-icons--social-instagram {
+    display: inline-block;
+    width: 1.75em;
+    height: 1.75em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23000' d='M511 4c138 0 155 1 209 3c53 2 90 11 123 24c34 13 62 30 90 58s45 56 58 90c13 33 22 70 24 123c2 54 3 71 3 209s-1 155-3 209c-2 53-11 90-24 123c-13 34-30 62-58 90s-56 45-90 58c-33 13-70 22-123 24c-54 2-71 3-209 3s-155-1-209-3c-53-2-90-11-123-24c-34-13-62-30-90-58s-45-56-58-90C18 810 9 773 7 720c-2-54-3-71-3-209s1-155 3-209c2-53 11-90 24-123c13-34 30-62 58-90s56-45 90-58c33-13 70-22 123-24c54-2 71-3 209-3m0 66c-144 0-161 1-217 3c-52 2-81 12-100 19c-49 20-82 53-102 102c-7 19-17 48-19 100c-2 56-3 73-3 217s1 161 3 217c2 52 12 81 19 100c20 49 53 82 102 102c19 7 48 17 100 19c56 2 73 3 217 3s161-1 217-3c52-2 81-12 100-19c49-20 82-53 102-102c7-19 17-48 19-100c2-56 3-73 3-217s-1-161-3-217c-2-52-12-81-19-100c-20-49-53-82-102-102c-19-7-48-17-100-19c-56-2-73-3-217-3m0 644c112 0 203-91 203-203s-91-203-203-203s-203 91-203 203s91 203 203 203m0-463c144 0 260 116 260 260S655 771 511 771S251 655 251 511s116-260 260-260m332-10c0 34-28 60-62 60s-60-26-60-60s26-62 60-62s62 28 62 62'/%3E%3C/svg%3E");
+    background-color: var(--secondarycolor);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    transition: 0.2s all ease-in;
+  }
+  .simple-line-icons--social-instagram:hover{
+    background-color: var(--secondarycolor);
+  }
+  .hugeicons--tiktok {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' color='%23000'%3E%3Cpath d='M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12'/%3E%3Cpath d='M10.536 11.008c-.82-.116-2.69.075-3.606 1.77s.007 3.459.584 4.129c.569.627 2.378 1.814 4.297.655c.476-.287 1.069-.502 1.741-2.747l-.078-8.834c-.13.973.945 3.255 4.004 3.525'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--secondarycolor);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    transition: 0.2s all ease-in;
+  }
+  .hugeicons--tiktok:hover{
+    background-color: var(--secondarycolor);
+  }
